@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="org.css" />
+    <title>404 error</title>
+  </head>
+  <body>
+    <p id="clue" class="hidden-clue">Here is the clue!</p>
+    <div class="container">
+      <img
+        src="download.png"
+        alt="not found"
+        class="icon"
+        onmousedown="triggerClue(true)"
+        onmouseup="triggerClue(false)"
+      />
+      <h1>This site can't be reached</h1>
+      <p><strong>https</strong> refused to connect.</p>
+      <div class="suggestions">
+        <p>Try:</p>
+        <ul>
+          <li>Checking the connection</li>
+          <li><a href="#">Checking the proxy and the firewall</a></li>
+        </ul>
+      </div>
+      <p class="error-code">ERR_CONNECTION_REFUSED</p>
+      <button class="button" onclick="location.reload();">Reload</button>
+    </div>
+  </body>
+  <script src="org.js"></script>
+</html>
