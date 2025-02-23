@@ -3,6 +3,6 @@ function triggerClue(isPressed) {
   if (isPressed) {
     clue.style.display = "block";
   } else {
-    clue.style.display = "none"; //none
+    clue.style.display = "none";
   }
 }
